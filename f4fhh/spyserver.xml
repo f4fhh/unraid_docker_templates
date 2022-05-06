@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Spyserver</Name>
+  <Repository>ghcr.io/f4fhh/spyserver_container</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1651852120</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5555</HostPort>
+        <ContainerPort>5555</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>60000</Value>
+      <Name>FREQUENCY_CORRECTION_PPB</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>0</Value>
+      <Name>LIST_IN_DIRECTORY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OWNER_NAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>OWNER_EMAIL</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ANTENNA_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>ANTENNA_LOCATION</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>GENERAL_DESCRIPTION</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Bind port" Target="5555" Default="5555" Mode="tcp" Description="TCP Listener" Type="Port" Display="always" Required="false" Mask="false">5555</Config>
+  <Config Name="Device path" Target="" Default="" Mode="" Description="Device path" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
+  <Config Name="Frequency correction" Target="FREQUENCY_CORRECTION_PPB" Default="" Mode="" Description="Frequency Correction in PPB (PPM*1000)" Type="Variable" Display="always" Required="false" Mask="false">60000</Config>
+  <Config Name="List in directory" Target="LIST_IN_DIRECTORY" Default="0" Mode="" Description="List Server in Airspy Directory" Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+  <Config Name="Owner name" Target="OWNER_NAME" Default="" Mode="" Description="Owner name" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Owner email" Target="OWNER_EMAIL" Default="" Mode="" Description="Owner email" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Antenna type" Target="ANTENNA_TYPE" Default="" Mode="" Description="For example: Random Wire/Magnetic Loop/Mini-Whip/Inverted V/etc." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Antenna location" Target="ANTENNA_LOCATION" Default="" Mode="" Description="For example: 48.858332, 2.294560" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="General description" Target="GENERAL_DESCRIPTION" Default="" Mode="" Description="General description" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
