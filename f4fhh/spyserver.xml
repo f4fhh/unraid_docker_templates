@@ -2,25 +2,25 @@
 <Container version="2">
   <Name>Spyserver</Name>
   <Repository>ghcr.io/f4fhh/spyserver_container</Repository>
-  <Registry/>
+  <Registry>https://github.com/f4fhh/spyserver_container</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support/>
-  <Project/>
-  <Overview/>
-  <Category/>
+  <Project>https://airspy.com/quickstart/</Project>
+  <Overview>Airspy R0, R2, Mini, Airspy HF+ and RTL-SDR can be used as a high performance SDR receiver capable of streaming separate chunks of the spectrum to multiple clients over the LAN or the Internet.</Overview>
+  <Category>Other:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon/>
+  <Icon>https://raw.githubusercontent.com/f4fhh/unraid_docker_templates/main/icons/radio.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1651852120</DateInstalled>
+  <DateInstalled>1651941436</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Description/>
+  <Description>Airspy R0, R2, Mini, Airspy HF+ and RTL-SDR can be used as a high performance SDR receiver capable of streaming separate chunks of the spectrum to multiple clients over the LAN or the Internet.</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
