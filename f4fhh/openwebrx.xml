@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>openwebrx</Name>
+  <Repository>jketterl/openwebrx</Repository>
+  <Registry>https://hub.docker.com/r/jketterl/openwebrx-sdrplay/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/jketterl/openwebrx-sdrplay/</Support>
+  <Project>https://www.openwebrx.de/</Project>
+  <Overview>OpenWebRX is a multi-user SDR receiver that can be operated from any web browser without the need for any additional client software. It is the ideal solution to provide access to the HF spectrum at your location of choice to a wide audience.</Overview>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:8073]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/f4fhh/unraid_docker_templates/main/icons/openwebrx.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1652025421</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>OpenWebRX is a multi-user SDR receiver that can be operated from any web browser without the need for any additional client software. It is the ideal solution to provide access to the HF spectrum at your location of choice to a wide audience.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8073</HostPort>
+        <ContainerPort>8073</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/openwebrx</HostDir>
+      <ContainerDir>/etc/openwebrx</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/openwebrx/lib/</HostDir>
+      <ContainerDir>/var/lib/openwebrx</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Web UI Port" Target="8073" Default="" Mode="tcp" Description="Port used to access the web interface of the application.&amp;lt;br&amp;gt;&amp;lt;b&amp;gt;NOTE:&amp;lt;/b&amp;gt; This applies only when &amp;lt;i&amp;gt;Network Type&amp;lt;/i&amp;gt; is set to &amp;lt;i&amp;gt;Bridge&amp;lt;/i&amp;gt;.  For other network types, port 8073 should be used instead." Type="Port" Display="always" Required="false" Mask="false">8073</Config>
+  <Config Name="Device path" Target="" Default="" Mode="" Description="Device path" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb/</Config>
+  <Config Name="Config Directory" Target="/etc/openwebrx" Default="/mnt/user/appdata/openwebrx" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /etc/openwebrx" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/openwebrx</Config>
+  <Config Name="Config Directory 2" Target="/var/lib/openwebrx" Default="/mnt/user/appdata/openwebrx/lib/" Mode="rw" Description="This is where the application stores its configuration, log and any files needing persistency.&amp;lt;br&amp;gt;Container path: /var/lib/openwebrx" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/openwebrx/lib/</Config>
+</Container>
