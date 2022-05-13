@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sdrplay-dump1090</Name>
+  <Repository>chimbosonic/dump1090</Repository>
+  <Registry>https://hub.docker.com/r/chimbosonic/dump1090/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/chimbosonic/dump1090/</Support>
+  <Project>https://github.com/chimbosonic/dump1090-container</Project>
+  <Overview>This is a dump1090 with SDRplay support OCI image built using https://github.com/SDRplay/dump1090&#xD;
+&#xD;
+Uses the integrated SDRPlay API V3</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/FoxxMD/unraid-docker-templates/raw/master/icons/dump1090.png</Icon>
+  <ExtraParams/>
+  <PostArgs>--quiet --net --dev-sdrplay --oversample </PostArgs>
+  <CPUset/>
+  <DateInstalled>1652452041</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>This is a dump1090 with SDRplay support OCI image built using https://github.com/SDRplay/dump1090&#xD;
+&#xD;
+Uses the integrated SDRPlay API V3</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8080</HostPort>
+        <ContainerPort>8080</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>30005</HostPort>
+        <ContainerPort>30005</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>30002</HostPort>
+        <ContainerPort>30002</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+      <Port>
+        <HostPort>30003</HostPort>
+        <ContainerPort>30003</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>true</Value>
+      <Name>Community_Applications_Conversion</Name>
+      <Mode>{3}</Mode>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Community Applications Conversion" Target="Community_Applications_Conversion" Default="true" Mode="{3}" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="SDRPlay Device" Target="" Default="" Mode="" Description="SDRPlay Device" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
+  <Config Name="GUI Port" Target="8080" Default="8080" Mode="tcp" Description="Container Port: 8080" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="Beast Output Port" Target="30005" Default="30005" Mode="tcp" Description="Beast Output Port" Type="Port" Display="always" Required="false" Mask="false">30005</Config>
+  <Config Name="Raw Output Port" Target="30002" Default="30002" Mode="tcp" Description="Raw Output Port" Type="Port" Display="always" Required="false" Mask="false">30002</Config>
+  <Config Name="BaseStation Output Port" Target="30003" Default="30003" Mode="tcp" Description="BaseStation Output Port" Type="Port" Display="always" Required="false" Mask="false">30003</Config>
+</Container>
