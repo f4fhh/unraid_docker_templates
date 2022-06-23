@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sdrplay-rsptcp</Name>
+  <Repository>ghcr.io/f4fhh/rsptcp_container</Repository>
+  <Registry>https://ghcr.io/f4fhh/rsptcp_container</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/f4fhh/rsptcp_container</Support>
+  <Project>https://github.com/SDRplay/RSPTCPServer</Project>
+  <Overview>This is a linux I/Q stream server for SDRPlay RSP1, RSP1A, RSP2, RSPDuo, RSPdx&#xD;
+&#xD;
+Uses the integrated SDRPlay API V3</Overview>
+  <Category>Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/f4fhh/unraid_docker_templates/main/icons/radio.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1656007301</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="SDRPlay Device" Target="" Default="" Mode="" Description="SDRPlay Device" Type="Device" Display="always" Required="false" Mask="false">/dev/bus/usb</Config>
+  <Config Name="Stream output Port" Target="1234" Default="1234" Mode="tcp" Description="Stream output port" Type="Port" Display="always" Required="false" Mask="false">1234</Config>
+</Container>
