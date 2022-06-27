@@ -8,6 +8,7 @@ unRAID Docker Templates for Docker images in the "f4fhh" repository.
 - [Spyserver](https://airspy.com/quickstart/)
 - [Sdrplay-dump1090](https://github.com/chimbosonic/dump1090-container)
 - [Sdrplay-rsptcp](https://github.com/f4fhh/rsptcp_container)
+- [Sdrplay-sdrppserver](https://github.com/f4fhh/sdrppserver_container)
 
 # Usage
 
